@@ -1,0 +1,32 @@
+5. Mostrar por pantalla la cantidad de mujeres mayores de edad y la cantidad de hombres menores de edad de un total de N edades y sexo leídos desde teclado.
+
+Algoritmo Mayor_Menor_Sexo
+	Definir masculino, femenino, sexo , N, i, edad Como Entero
+	masculino <- 0
+	femenino <- 0
+	i <- 1
+	Escribir "Ingrese la cantidad de personas:"
+	Leer N
+	Mientras i <= N Hacer
+		Escribir "Elija su sexo"
+		Escribir "1. Femenino"
+		Escribir "2. Masculino"
+		Leer sexo
+		Si sexo == 1 Entonces
+			femenino <- femenino + 1
+			Si femenino >= 18 
+				Escribir "Es mayor de edad"
+			FinSi
+		SiNo
+			Si sexo == 2 Entonces
+				masculino <- masculino + 1
+				Si masculino < 18
+					Escribir "Es menor de edad"
+				FinSi
+			FinSi
+		FinSi
+	FinMientras
+	Escribir "Los hombres de menor edad:", masculino
+	Escribir "Las mujeres de mayor edad:", femenino
+FinAlgoritmo
+
